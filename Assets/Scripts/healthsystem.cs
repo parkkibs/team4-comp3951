@@ -7,6 +7,7 @@ public class healthsystem : MonoBehaviour
     public GameObject[] health;
     private int life;
     private bool dead;
+    public Sprite deadSprite;
     SpriteRenderer sprite;
 
     private void Start()
@@ -20,7 +21,7 @@ public class healthsystem : MonoBehaviour
         if(dead)
         {
             Debug.Log("Player is Dead.");
-            sprite.color = new Color(1, 0, 0, 1);
+            sprite.sprite = deadSprite;
             dead = false;
         }
     }
@@ -34,6 +35,7 @@ public class healthsystem : MonoBehaviour
             if (life < 1)
             {
                 dead = true;
+                FindObjectOfType<gamestate_manage>().endGame();
             }
         }        
     }
