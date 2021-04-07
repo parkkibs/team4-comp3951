@@ -14,6 +14,7 @@ public class spawnasteroid : MonoBehaviour
     {
         StartCoroutine(obstacleWave());//screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
+
     private void spawnObstacle()
     {
         GameObject a = Instantiate(obstaclePrefab) as GameObject;
