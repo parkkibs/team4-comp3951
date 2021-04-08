@@ -1,7 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Script for the Nebula Wall obstacle prefab.
+/// @author Xavier Nguyen
+/// @version 3.0
+/// </summary>
 public class nebulabehavior : MonoBehaviour
 {
     public float horizspeed = 400.0f;
@@ -17,6 +21,7 @@ public class nebulabehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Method to destory the object once it goes out of screen on the left side.
         if (transform.position.x < -360)
         {
             Destroy(this.gameObject);

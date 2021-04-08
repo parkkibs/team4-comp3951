@@ -1,27 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//Script to spawn Right-to-Left Asteroids
+/// <summary>
+/// Script for the asteroid spawner.
+/// @author Sam Merati
+/// @version 4.0
+/// </summary>
 
 
 public class spawnasteroid : MonoBehaviour
 {
     public GameObject obstaclePrefab;
+    //Variable to set the frequency of the asteroid spawning.
     public float respawnTime = 1.0f;
-    //private Vector2 screenBounds;
-    // Start is called before the first frame update
+
+    /// <summary>
+    /// Method that starts the whole spawning process.
+    /// </summary>
     void Start()
     {
-        StartCoroutine(obstacleWave());//screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
+        StartCoroutine(obstacleWave());
     }
 
+    /// <summary>
+    /// Creates an asteroid at a random height bound in the screen and out of bounds to the right of the screen.
+    /// </summary>
     private void spawnObstacle()
     {
         GameObject a = Instantiate(obstaclePrefab) as GameObject;
-        //a.transform.position = new Vector2(screenBounds.x *-2, Random.Range(-screenBounds.y, screenBounds.y));
         a.transform.position = new Vector2(1950, Random.Range(0,1080));
     }
-    // Update is called once per frame
+    /// <summary>
+    /// Loops the spawning method to keep spawning asteroids.
+    /// </summary>
+    /// <returns></returns>
     IEnumerator obstacleWave()
     {
         while(true)

@@ -1,25 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Script for the Nebula Wall obstacle spawner on the top of the screen.
+/// @author Xavier Nguyen
+/// @version 3.0
+/// </summary>
 public class nebularspawn : MonoBehaviour
 {
     public GameObject obstaclePrefab;
-    public float respawnTime;
+    public float respawnTime; //Variable can be changed according to difficulty.
 
-    //private Vector2 screenBounds;
-    // Start is called before the first frame update
+
+    // Start method calls the whole chain of methods.
     void Start()
     {
-        StartCoroutine(obstacleWave());//screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
+        StartCoroutine(obstacleWave());
     }
+    //Instantiates the nebula obstacle.
     private void spawnObstacle()
     {
         GameObject a = Instantiate(obstaclePrefab) as GameObject;
-        //a.transform.position = new Vector2(screenBounds.x *-2, Random.Range(-screenBounds.y, screenBounds.y));
-        a.transform.position = new Vector2(2040, Random.Range(-120, 120));
+  
+        a.transform.position = new Vector2(2040, Random.Range(960, 1200));
     }
-    // Update is called once per frame
+    //Loops the spawning of the nebula wall.
     IEnumerator obstacleWave()
     {
         while (true)
