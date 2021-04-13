@@ -22,7 +22,7 @@ public class obstaclebehavior : MonoBehaviour
         int randint = Random.Range(0, 5);
         this.GetComponent<SpriteRenderer>().sprite = spriteArray[randint];
         vertspeed = Random.Range(0, 250);
-        horizspeed = Random.Range(200, 400);
+        horizspeed = Random.Range(200 * gamestate_manage.obstaclespeed, 400 * gamestate_manage.obstaclespeed);
         rb = this.GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(-horizspeed, vertspeed);
        

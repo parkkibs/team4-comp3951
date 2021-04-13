@@ -8,7 +8,7 @@ using UnityEngine;
 /// </summary>
 public class playermovement : MonoBehaviour
 {
-    public float moveSpeed;
+    public float moveSpeed = 400 * gamestate_manage.playerspeed;
     public Rigidbody2D rb;
     private Vector2 moveDirection;
 

@@ -15,7 +15,7 @@ public class nebulabehavior : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(-horizspeed, 0);
+        rb.velocity = new Vector2(-horizspeed * gamestate_manage.obstaclespeed, 0);
     }
 
     // Update is called once per frame

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 /// @version 2.0
 /// </summary>
 public class gamestate_manage : MonoBehaviour
-{
+{   
     /// <summary>
     /// bool variable to prevent game over function from looping
     /// </summary>
@@ -19,10 +19,10 @@ public class gamestate_manage : MonoBehaviour
     /// <summary>
     /// These four static variables adjust the difficulty of the game based on what was selected in the difficulties menu.
     /// </summary>
-    public static int obstaclespeed;
-    public static int lives;
-    public static int spawnfrequency;
-    public static int playerspeed;
+    public static float obstaclespeed = 1;
+    public static int lives = 3;
+    public static float spawnfrequency = 1;
+    public static float playerspeed = 1;
 
     /// <summary>
     /// Function for ending the game after healthsystem triggers takeDamage when lives are at 1.

@@ -13,15 +13,37 @@ public class healthsystem : MonoBehaviour
     /// </summary>
     public GameObject[] health;
     private int life;
+    private int startinglives = gamestate_manage.lives;
     private bool dead;
     public Sprite deadSprite;
     SpriteRenderer sprite;
 
     private void Start()
     {
-        life = health.Length;
         sprite = GetComponent<SpriteRenderer>();
-    }
+        switch(startinglives)
+        {
+            case 3:
+                health[0].gameObject.SetActive(true);
+                health[1].gameObject.SetActive(true);
+                health[2].gameObject.SetActive(true);
+                life = 3;
+                break;
+            case 2:
+                health[0].gameObject.SetActive(true);
+                health[1].gameObject.SetActive(true);
+                health[2].gameObject.SetActive(false);
+                life = 2;
+                break;
+            case 1:
+                health[0].gameObject.SetActive(true);
+                health[1].gameObject.SetActive(false);
+                health[2].gameObject.SetActive(false);
+                life = 1;
+                break;
+        }
+     }
+    
     // Update is called once per frame
     void Update()
     {

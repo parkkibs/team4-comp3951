@@ -23,7 +23,7 @@ public class nebulaspawnbtm : MonoBehaviour
     {
         while (true)
         {
-            respawnTime = Random.Range(8, 15);
+            respawnTime = Random.Range(8 / gamestate_manage.spawnfrequency, 15 / gamestate_manage.spawnfrequency);
             yield return new WaitForSeconds(respawnTime);
             spawnObstacle();
         }
