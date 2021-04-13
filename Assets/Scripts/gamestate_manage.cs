@@ -29,16 +29,16 @@ public class gamestate_manage : MonoBehaviour
     /// </summary>
     public void endGame()
     {
-        if(gameHasEnded == false)
+        if (gameHasEnded == false)
         {
             gameHasEnded = true;
             Debug.Log("Game Over");
-            Invoke("Restart", restartDelay);
+            Invoke("gameOver", restartDelay);
         }
     }
 
-    void Restart()
+    void gameOver()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("gameOver_screen");
     }
 }
