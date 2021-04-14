@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 /// @author Sam Merati
 /// @version 2.0
 /// </summary>
+
 public class main_menu : MonoBehaviour
 {
     /// <summary>
@@ -19,6 +20,7 @@ public class main_menu : MonoBehaviour
     /// <summary>
     /// Method for the Settings Button, redirects to the difficulty customization scene.
     /// </summary>
+
     public void game_settings()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
@@ -26,6 +28,7 @@ public class main_menu : MonoBehaviour
     /// <summary>
     /// Method for the Quit Game Button, closes the application.
     /// </summary>
+
     public void quit_game()
     {
         Application.Quit();

@@ -36,11 +36,11 @@ public class spawnasteroid : MonoBehaviour
     /// <returns></returns>
     IEnumerator obstacleWave()
     {
-        while(true)
+        while (true)
         {
             yield return new WaitForSeconds(respawnTime);
             spawnObstacle();
         }
-        
+
     }
 }

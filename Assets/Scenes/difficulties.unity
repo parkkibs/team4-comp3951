@@ -180,6 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+
   m_text: 100%
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -403,6 +404,7 @@ GameObject:
   - component: {fileID: 63519903}
   - component: {fileID: 63519902}
   m_Layer: 5
+
   m_Name: button_100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1590,6 +1592,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 700078537}
   m_OnClick:
     m_PersistentCalls:
+=======
       m_Calls:
       - m_Target: {fileID: 1387747210}
         m_TargetAssemblyTypeName: difficulties, Assembly-CSharp
@@ -1723,6 +1726,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 722044149}
   m_OnClick:
     m_PersistentCalls:
+=======
       m_Calls:
       - m_Target: {fileID: 1387747210}
         m_TargetAssemblyTypeName: difficulties, Assembly-CSharp
@@ -1990,6 +1994,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 755867619}
   m_OnClick:
     m_PersistentCalls:
+=======
       m_Calls:
       - m_Target: {fileID: 1387747210}
         m_TargetAssemblyTypeName: difficulties, Assembly-CSharp
