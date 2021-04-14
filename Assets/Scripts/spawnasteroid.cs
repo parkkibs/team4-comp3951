@@ -19,16 +19,16 @@ public class spawnasteroid : MonoBehaviour
     {
         GameObject a = Instantiate(obstaclePrefab) as GameObject;
         //a.transform.position = new Vector2(screenBounds.x *-2, Random.Range(-screenBounds.y, screenBounds.y));
-        a.transform.position = new Vector2(1950, Random.Range(0,1080));
+        a.transform.position = new Vector2(1950, Random.Range(0, 1080));
     }
     // Update is called once per frame
     IEnumerator obstacleWave()
     {
-        while(true)
+        while (true)
         {
             yield return new WaitForSeconds(respawnTime);
             spawnObstacle();
         }
-        
+
     }
 }

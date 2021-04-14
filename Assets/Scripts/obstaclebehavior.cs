@@ -8,7 +8,7 @@ public class obstaclebehavior : MonoBehaviour
     public float horizspeed;
     public Rigidbody2D rb;
     //private Vector2 screenBounds;
-    
+
     [SerializeField] public Sprite[] spriteArray;
 
     // Attaches RigidBody to the Asteroid, providing collision.
@@ -22,13 +22,13 @@ public class obstaclebehavior : MonoBehaviour
         rb = this.GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(-horizspeed, vertspeed);
         //screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
-        
+
     }
 
     // Checks if it's out of bounds to the left of the camera and despawns when it reaches the end.
     void Update()
     {
-        if(transform.position.x < -360)
+        if (transform.position.x < -360)
         {
             Destroy(this.gameObject);
         }
