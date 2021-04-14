@@ -27,6 +27,7 @@ public class gamestate_manage : MonoBehaviour
     /// <summary>
     /// Function for ending the game after healthsystem triggers takeDamage when lives are at 1.
     /// </summary>
+
     public void endGame()
     {
         if (gameHasEnded == false)
