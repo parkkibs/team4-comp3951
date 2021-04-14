@@ -20,11 +20,14 @@ public class difficulties : MonoBehaviour
     public float obstaclespeed = gamestate_manage.obstaclespeed * 100;
     public int spawnfreq = (int) (1 / gamestate_manage.spawnfrequency) * 100;
     public int lives = gamestate_manage.lives;
-
-    public void go_back() //Currently bugged, does not appear on the menu inspector
+    /// <summary>
+    /// Brings the player back to the Main Menu from the Difficulties Menu.
+    /// </summary>
+    public void go_back() 
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
+
     /// <summary>
     /// Sets the speed of the obstacles by changing the static variable in gamestate_manage
     /// </summary>
@@ -36,6 +39,7 @@ public class difficulties : MonoBehaviour
         updateText();
         Debug.Log(gamestate_manage.playerspeed);
     }
+
     /// <summary>
     /// Sets the speed of the obstacles by changing the static variable in gamestate_manage
     /// </summary>
@@ -46,6 +50,7 @@ public class difficulties : MonoBehaviour
         obstaclespeed = gamestate_manage.obstaclespeed * 100;
         updateText();
     }
+
     /// <summary>
     /// Sets the speed of the obstacles by changing the static variable in gamestate_manage
     /// </summary>
@@ -56,6 +61,7 @@ public class difficulties : MonoBehaviour
         spawnfreq = (int) (100 / gamestate_manage.spawnfrequency);
         updateText();
     }
+
     /// <summary>
     /// Sets the speed of the obstacles by changing the static variable in gamestate_manage
     /// </summary>
@@ -67,6 +73,9 @@ public class difficulties : MonoBehaviour
         updateText();
     }
 
+    /// <summary>
+    /// Sets the text under each label to show which difficulty setting have been set.
+    /// </summary>
     public void updateText()
     {
         textbox.text = "Player Speed: " + playerspeed.ToString() + "%";
