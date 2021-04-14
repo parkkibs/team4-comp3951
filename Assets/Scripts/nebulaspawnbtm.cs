@@ -1,31 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Same script as nebularspawn except it applies for the bottom nebula spawner.
+/// @author Xavier Nguyen
+/// </summary>
 public class nebulaspawnbtm : MonoBehaviour
 {
-    // Start is called before the first frame update
     public GameObject obstaclePrefab;
     public float respawnTime;
 
-    //private Vector2 screenBounds;
-    // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(obstacleWave());//screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
+        StartCoroutine(obstacleWave());
     }
     private void spawnObstacle()
     {
         GameObject a = Instantiate(obstaclePrefab) as GameObject;
-        //a.transform.position = new Vector2(screenBounds.x *-2, Random.Range(-screenBounds.y, screenBounds.y));
-        a.transform.position = new Vector2(2040, Random.Range(960, 1200));
+        a.transform.position = new Vector2(2040, Random.Range(-120, 120));
     }
-    // Update is called once per frame
     IEnumerator obstacleWave()
     {
         while (true)
         {
-            respawnTime = Random.Range(8, 15);
+            respawnTime = Random.Range(8 / gamestate_manage.spawnfrequency, 15 / gamestate_manage.spawnfrequency);
             yield return new WaitForSeconds(respawnTime);
             spawnObstacle();
         }

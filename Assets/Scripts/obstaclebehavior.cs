@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Script for the asteroid obstacle prefab.
+/// @author Sam Merati
+/// @version 4.0
+/// </summary>
 public class obstaclebehavior : MonoBehaviour
 {
     public float vertspeed;
     public float horizspeed;
     public Rigidbody2D rb;
-    //private Vector2 screenBounds;
+    //Contains random sprites of asteroids to vary obstacle size and appearance.
 
     [SerializeField] public Sprite[] spriteArray;
 
@@ -18,10 +22,9 @@ public class obstaclebehavior : MonoBehaviour
         int randint = Random.Range(0, 5);
         this.GetComponent<SpriteRenderer>().sprite = spriteArray[randint];
         vertspeed = Random.Range(0, 250);
-        horizspeed = Random.Range(200, 400);
+        horizspeed = Random.Range(200 * gamestate_manage.obstaclespeed, 400 * gamestate_manage.obstaclespeed);
         rb = this.GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(-horizspeed, vertspeed);
-        //screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
+        rb.velocity = new Vector2(-horizspeed, vertspeed);      
 
     }
 

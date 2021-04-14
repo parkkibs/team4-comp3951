@@ -1,17 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Script that allows background images to scroll infinitely, allowing for the illusion of movement
+/// @author Kibum Park
+/// @version 1.0
+/// </summary>
 public class backgroundscroll : MonoBehaviour
 {
 
     public float speed = 0.5f;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
