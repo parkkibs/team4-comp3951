@@ -8,7 +8,9 @@ using UnityEngine;
 /// </summary>
 public class backgroundscroll : MonoBehaviour
 {
-
+    /// <summary>
+    /// Set variable speed for the scrolling
+    /// </summary>
     public float speed = 0.5f;
 
     // Update is called once per frame

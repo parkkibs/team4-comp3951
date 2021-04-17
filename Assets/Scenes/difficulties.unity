@@ -180,7 +180,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-
   m_text: 100%
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -341,7 +340,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1387747210}
+      - m_Target: {fileID: 1354238434}
         m_TargetAssemblyTypeName: difficulties, Assembly-CSharp
         m_MethodName: setLives
         m_Mode: 3
@@ -404,7 +403,6 @@ GameObject:
   - component: {fileID: 63519903}
   - component: {fileID: 63519902}
   m_Layer: 5
-
   m_Name: button_100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -475,7 +473,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1387747210}
+      - m_Target: {fileID: 1354238434}
         m_TargetAssemblyTypeName: difficulties, Assembly-CSharp
         m_MethodName: setPlayerSpeed
         m_Mode: 4
@@ -683,7 +681,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1387747210}
+      - m_Target: {fileID: 1354238434}
         m_TargetAssemblyTypeName: difficulties, Assembly-CSharp
         m_MethodName: setLives
         m_Mode: 3
@@ -984,7 +982,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1387747210}
+      - m_Target: {fileID: 1354238434}
         m_TargetAssemblyTypeName: difficulties, Assembly-CSharp
         m_MethodName: setPlayerSpeed
         m_Mode: 4
@@ -1091,7 +1089,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Way More Obstacles
+  m_text: WTF
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1180,7 +1178,6 @@ GameObject:
   - component: {fileID: 382538221}
   - component: {fileID: 382538220}
   - component: {fileID: 382538219}
-  - component: {fileID: 382538223}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1274,26 +1271,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &382538223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 382538218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7817541e6b3eb064d9382f7f360c8650, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textbox: {fileID: 0}
-  textbox2: {fileID: 0}
-  textbox3: {fileID: 0}
-  textbox4: {fileID: 0}
-  playerspeed: 100
-  obstaclespeed: 100
-  spawnfreq: 100
-  lives: 3
 --- !u!1 &402084355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,7 +1390,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 34, y: -396}
+  m_AnchoredPosition: {x: 34, y: -316}
   m_SizeDelta: {x: 200, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &417445509
@@ -1460,7 +1437,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1387747210}
+      - m_Target: {fileID: 1354238434}
         m_TargetAssemblyTypeName: difficulties, Assembly-CSharp
         m_MethodName: go_back
         m_Mode: 1
@@ -1592,9 +1569,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 700078537}
   m_OnClick:
     m_PersistentCalls:
-=======
       m_Calls:
-      - m_Target: {fileID: 1387747210}
+      - m_Target: {fileID: 1354238434}
         m_TargetAssemblyTypeName: difficulties, Assembly-CSharp
         m_MethodName: setObstacleSpawn
         m_Mode: 4
@@ -1726,9 +1702,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 722044149}
   m_OnClick:
     m_PersistentCalls:
-=======
       m_Calls:
-      - m_Target: {fileID: 1387747210}
+      - m_Target: {fileID: 1354238434}
         m_TargetAssemblyTypeName: difficulties, Assembly-CSharp
         m_MethodName: setObstacleSpawn
         m_Mode: 4
@@ -1994,9 +1969,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 755867619}
   m_OnClick:
     m_PersistentCalls:
-=======
       m_Calls:
-      - m_Target: {fileID: 1387747210}
+      - m_Target: {fileID: 1354238434}
         m_TargetAssemblyTypeName: difficulties, Assembly-CSharp
         m_MethodName: setObstacleSpawn
         m_Mode: 4
@@ -2672,6 +2646,7 @@ GameObject:
   - component: {fileID: 1354238433}
   - component: {fileID: 1354238432}
   - component: {fileID: 1354238431}
+  - component: {fileID: 1354238434}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -2727,31 +2702,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1387747209
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1387747211}
-  - component: {fileID: 1387747210}
-  - component: {fileID: 1387747212}
-  m_Layer: 0
-  m_Name: Scripts
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1387747210
+--- !u!114 &1354238434
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387747209}
+  m_GameObject: {fileID: 1354238430}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7817541e6b3eb064d9382f7f360c8650, type: 3}
@@ -2765,33 +2722,6 @@ MonoBehaviour:
   obstaclespeed: 100
   spawnfreq: 100
   lives: 3
---- !u!4 &1387747211
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387747209}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 946.36536, y: 540.3579, z: -3601.3225}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1387747212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387747209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 217b1b663f136a942b2ecd1367f93d24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  restartDelay: 5
 --- !u!1 &1413172859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2875,7 +2805,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1387747210}
+      - m_Target: {fileID: 1354238434}
         m_TargetAssemblyTypeName: difficulties, Assembly-CSharp
         m_MethodName: setLives
         m_Mode: 3
@@ -3072,7 +3002,7 @@ GameObject:
   - component: {fileID: 1493746367}
   - component: {fileID: 1493746366}
   m_Layer: 5
-  m_Name: button_200
+  m_Name: button_200ob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3142,7 +3072,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1387747210}
+      - m_Target: {fileID: 1354238434}
         m_TargetAssemblyTypeName: difficulties, Assembly-CSharp
         m_MethodName: setObstacleSpeed
         m_Mode: 4
@@ -3205,7 +3135,7 @@ GameObject:
   - component: {fileID: 1687406104}
   - component: {fileID: 1687406103}
   m_Layer: 5
-  m_Name: button_150
+  m_Name: button_150ob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3275,7 +3205,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1387747210}
+      - m_Target: {fileID: 1354238434}
         m_TargetAssemblyTypeName: difficulties, Assembly-CSharp
         m_MethodName: setObstacleSpeed
         m_Mode: 4
@@ -3334,7 +3264,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1754569886}
-  - component: {fileID: 1754569887}
   m_Layer: 0
   m_Name: player_speed
   m_TagString: Untagged
@@ -3360,26 +3289,6 @@ Transform:
   m_Father: {fileID: 382538222}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1754569887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754569885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7817541e6b3eb064d9382f7f360c8650, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textbox: {fileID: 0}
-  textbox2: {fileID: 0}
-  textbox3: {fileID: 0}
-  textbox4: {fileID: 0}
-  playerspeed: 100
-  obstaclespeed: 100
-  spawnfreq: 100
-  lives: 3
 --- !u!1 &1840308316
 GameObject:
   m_ObjectHideFlags: 0
@@ -3773,7 +3682,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Normal
+  m_text: A Few
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3933,7 +3842,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1387747210}
+      - m_Target: {fileID: 1354238434}
         m_TargetAssemblyTypeName: difficulties, Assembly-CSharp
         m_MethodName: setPlayerSpeed
         m_Mode: 4
@@ -3996,7 +3905,7 @@ GameObject:
   - component: {fileID: 1974555993}
   - component: {fileID: 1974555992}
   m_Layer: 5
-  m_Name: button_100
+  m_Name: button_100ob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4066,7 +3975,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1387747210}
+      - m_Target: {fileID: 1354238434}
         m_TargetAssemblyTypeName: difficulties, Assembly-CSharp
         m_MethodName: setObstacleSpeed
         m_Mode: 4
@@ -4307,7 +4216,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: More Obstacles
+  m_text: A Lot More
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
